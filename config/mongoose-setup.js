@@ -9,4 +9,4 @@ mongoose.connect( 'mongodb://localhost/inspired', { useMongoClient: true } )
 .catch( err => {
   console.log( 'Mongoose connection FAILED!!! 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨' );
   console.log( err );
-})
+});

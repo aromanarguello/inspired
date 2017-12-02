@@ -15,28 +15,12 @@
       <input id="search-bar" type="text" name="" value="">
       <i class="ion-search search-icon"></i>
     </form>
-    <div class="data-list-container">
-      <% seed.forEach( oneSeed => { %>
-        <%if (oneSeed.company.length < 35) {%>
-        <ul>
-          <li>
-            <a href="/"><%=oneSeed.company%></a>
-          </li>
-        </ul>
-        <%}%>
-      <%});%>
-    </div>
-    <div class="data-list-container">
-      <% seedSorted.forEach( oneSeed => { %>
-        <%if (oneSeed.company.length < 40) {%>
-        <ul>
-          <li>
-            <a href="/"><%=oneSeed.company%></a>
-          </li>
-        </ul>
-      <%}%>
-      <%});%>
-    </div>
+    <% seed.forEach( oneSeed => { %>
+      <p>
+      <%=oneSeed.company%>
+      </p>
+    <%});%>
+
   </div> <!-- Right container -->
   <div class="left-container">
 
