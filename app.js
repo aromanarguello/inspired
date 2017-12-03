@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser   = require('body-parser');
 const layouts      = require('express-ejs-layouts');
 
-require("dotenv").config()
+require("dotenv").config();
 
 require("./config/mongoose-setup.js");
 
