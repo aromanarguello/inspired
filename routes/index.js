@@ -1,6 +1,7 @@
-const express   = require('express');
-const router    = express.Router();
-const SeedModel = require('../models/inspired-model');
+const express        = require('express');
+const router         = express.Router();
+const SeedModel      = require('../models/inspired-model');
+const ScheduleModel  = require('../models/schedule-model');
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
@@ -28,6 +29,24 @@ router.get('/', (req, res, next) => {
   })
   .catch( err => {
     console.log( err );
+  });
+});
+
+router.post('/', (req, res, next) => {
+  const scheduleFormSubmission = {
+    firstName:  req.body.firstName,
+    lastName:   req.body.lastName,
+    email:      req.body.email,
+    message:    req.body.message,
+    dateAdded:  new Date()
+  };
+
+const scheduleModel = new ScheduleModel( scheduleFormSubmission );
+scheduleModel.save( err => {
+  if ( err ) {
+    return next( err );
+  }
+  res.redirect("/");
   });
 
 });
