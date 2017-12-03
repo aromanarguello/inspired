@@ -1,8 +1,10 @@
 /*----------------
 background light green: #E3F0F4;
 greying light blue: #C4E0ED; //  rgb(196,224,237)
-letters light blue: #6CB1F0;
+letters light blue: #6CB1F0; // rgb(108,177,240)
 navy blue: #0A2037;
+pete river (submit btn): #3498db;
+
 ----------------*/
 
 body {
@@ -15,7 +17,6 @@ a {
 }
 
 .main-container {
-  border: 1px solid #fff;
   width: 100%;
   height: 1000px;
   overflow: auto;
@@ -24,9 +25,8 @@ a {
 .right-container,
 .left-container {
   margin: 0;
-  border: 1px solid #fff;
   width: 49.8%;
-  height: 900px;
+  height: 120%;
 }
 
 .right-container {
@@ -35,6 +35,7 @@ a {
 
 .left-container {
   float: right;
+  background-color: #E3F0F4;
 }
 
 .top-hr {
@@ -89,19 +90,99 @@ a {
 }
 
 .data-list-container {
-  width: 300px;
+  width: 280px;
   height: auto;
-  margin: 25px 0 0 25px;
-  display: inline-grid;
+  margin: 25px 0 0 10px;
+}
+
+.data-list-right {
+  margin-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  float: right;
+  height: 100%;
+}
+
+.data-list-left {
+  float: left;
+}
+.data-list-parent {
+  overflow: auto;
+  display: inline-block;
 }
 
 .data-list-container:link,
 .data-list-container:visited,
 .data-list-container li,
-.data-list-container a {
+.data-list-container a,
+.nav-links li {
   color: #00B7FF;
   text-decoration: none;
   list-style-type: none;
   font-size: 12px;
+  margin: 0;
+}
 
+.nav-links {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 40px 0 0;
+}
+
+.nav-links li {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.left-form-container {
+  width: 300px;
+  height: 200px;
+  margin: 15px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.label-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: rgb(108,177,240);
+}
+
+#firstNameInput,
+#lastNameInput,
+#emailInput {
+  border: 0;
+  border-bottom: 2px solid rgba(127, 140, 141,0.4);
+  background-color: transparent;
+  color: rgb(127,140,141);
+  margin: 0 0 10px 0;
+  font-size: 10px;
+  width: 80%;
+}
+
+#messageInput {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgb(196,224,237);
+  border-radius: 5px;
+  border: 0;
+  margin-top: 4px;
+  margin-bottom: 1px;
+  color: rgb(127,140,141);
+}
+
+
+#schedule-input button {
+  width: 120px;
+  height: 20px;
+  color: rgba(196,224,237,0.8);
+  background-color: #3498db;
+}
+
+.submit-btn:active,
+.submit-btn:hover {
+  background-color: #fff;
 }

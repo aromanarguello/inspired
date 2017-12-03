@@ -19,8 +19,8 @@ router.get('/', (req, res, next) => {
 
   SeedModel
   .find()
-  .limit(20)
-  .sort({ })
+  .limit(25)
+  .sort()
   .exec()
   .then( sortedSeedResults => {
     res.locals.seedSorted = sortedSeedResults;
