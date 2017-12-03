@@ -1,5 +1,5 @@
-$(document).ready( () => {
-  $('.submit-btn').click(() =>{
-    console.log (click);
-  });
-});
+// $(document).ready( () => {
+//   $('.submit-btn').click(() =>{
+//     $('.schedule-link').css("visibility", "visible");
+//   });
+// });

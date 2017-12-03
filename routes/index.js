@@ -1,7 +1,8 @@
-const express        = require('express');
-const router         = express.Router();
-const SeedModel      = require('../models/inspired-model');
-const ScheduleModel  = require('../models/schedule-model');
+const express         = require('express');
+const router          = express.Router();
+const SeedModel       = require('../models/inspired-model');
+const ScheduleModel   = require('../models/schedule-model');
+const PortafolioModel = require('../models/portafolio-model');
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
@@ -25,11 +26,22 @@ router.get('/', (req, res, next) => {
   .exec()
   .then( sortedSeedResults => {
     res.locals.seedSorted = sortedSeedResults;
-    res.render("index");
   })
   .catch( err => {
     console.log( err );
   });
+
+  PortafolioModel
+  .find()
+  .limit(10)
+  .exec()
+  .then( portafolioSeedResults => {
+    res.locals.portafolio = portafolioSeedResults;
+    res.render("index");
+  })
+  .catch( err => {
+  console.log( err );
+});
 });
 
 router.post('/', (req, res, next) => {
@@ -48,7 +60,11 @@ scheduleModel.save( err => {
   }
   res.redirect("/");
   });
-
 });
+
+router.get("/myview", (req, res, next) => {
+  res.render("admin-view/admin-view");
+});
+
 
 module.exports = router;

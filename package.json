@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "reload": "node ./bin/www",
-    "seed": "node ./bin/seed"
+    "seed": "node ./bin/seed",
+    "portafolio": "node ./bin/portafolio-seed"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
