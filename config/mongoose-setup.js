@@ -2,7 +2,7 @@ const mongoose = require( "mongoose" );
 
 mongoose.Promise = Promise;
 
-mongoose.connect( process.env.DATABASE_URL, { useMongoClient: true } )
+mongoose.connect( "mongodb://localhost/inspired", { useMongoClient: true } )
 .then( () => {
   console.log( 'Mongoose Connected!!!✨✨✨✨✨✨✨✨' );
 })
