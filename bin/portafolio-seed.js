@@ -15,7 +15,7 @@ const portafolioInfo = [
     url: "https://aromanarguello.github.io/chemgame/index.html",
     description: `ChemGame is an interactive game to learn and
     practice the Periodic Table. It features multiplayer mode.`,
-    img: "./public/images/chemgame.png"
+    img: ""
   },
   {
     name: "VitaHelp",
@@ -24,7 +24,7 @@ const portafolioInfo = [
     find near by rehabilittion centers. Adittionally they can create accounts
     and post in a message board to review different centers based on personal
     experience. Version 2 will feature a buddy-mentor system.`,
-    img: "../public/images/vitahelp.png"
+    img: ""
   }
 ];
 

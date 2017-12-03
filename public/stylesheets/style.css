@@ -254,6 +254,7 @@ blockquote p {
   height: 400px;
   background-color: #fff;
   margin: 20px auto;
+
 }
 
 .header-container {
@@ -261,4 +262,14 @@ blockquote p {
   text-align: center;
   padding-top: 20px;
   color: #6CB1F0;
+}
+
+.description-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.description-container a {
+  text-decoration: none;
 }
