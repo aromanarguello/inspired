@@ -8,7 +8,8 @@ const portafolioInfo = [
     description: `Inspired is a personal tool I created to help myself keep organized
     with my schedule. It is my personalized virtual assistant/portafolio. People
     are able to see my availbale times and schedule meetings through Inspired and even
-    add a message with the purpose of the meetign`
+    add a message with the purpose of the meetign`,
+    img: "https://github.com/aromanarguello/inspired/blob/master/public/images/inspired.png?raw=true"
   },
   {
     name: "ChemGame",
