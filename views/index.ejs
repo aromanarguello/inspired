@@ -96,11 +96,16 @@
         <div class="header-container">
           <h1> <%=fromPortafolio.name %></h1>
         </div>
-        <div class="description-container">
+        <div class="link-container">
           <a href="<%=fromPortafolio.url%>"> Take a look </a>
         </div>
           <div class="content-container">
-          <img src="<%=fromPortafolio.img%>"/>
+          <img src="<%= fromPortafolio.img %>" alt=""/>
+          </div>
+          <div class="post-text-container">
+            <p>
+            <%=fromPortafolio.description %>
+            </p>
           </div>
     </div>
     <%})%>

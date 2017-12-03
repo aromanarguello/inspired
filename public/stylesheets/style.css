@@ -261,15 +261,23 @@ blockquote p {
   width: 100%;
   text-align: center;
   padding-top: 20px;
-  color: #6CB1F0;
+  color: #6CB1F0
 }
 
-.description-container {
+.link-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.description-container a {
+.link-container a {
   text-decoration: none;
+}
+
+.post-text-container {
+  position: relative;
+  top: 170px;
+  font-weight: bold;
+  color: #6CB1F0;
+  padding: 12px;
 }
