@@ -282,9 +282,14 @@ blockquote p {
   padding: 12px;
   text-align: center;
 }
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
 
 .screenshot {
-  width: 100px;
+  width: 170px;
   height: 120px;
 
 }
