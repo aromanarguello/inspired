@@ -11,3 +11,6 @@ Later with the help of a calendar API, I was able to get the user to also schedu
 The two columns on the left side are dummy information used to fill the text, soon they will be replaced with various actual topics. 
 
 The Search bar is still not functional
+
+
+Technologies used: Javascript, HTML, CSS, Node.JS, Express, EJS, MongoDb
