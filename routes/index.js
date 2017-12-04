@@ -3,7 +3,7 @@ const router          = express.Router();
 const SeedModel       = require('../models/inspired-model');
 const ScheduleModel   = require('../models/schedule-model');
 const PortafolioModel = require('../models/portafolio-model');
-const BookModel       = require('../models/book-model');
+
 /* GET home page. */
 router.get('/', (req, res, next) => {
   SeedModel
