@@ -261,7 +261,7 @@ blockquote p {
   width: 100%;
   text-align: center;
   padding-top: 20px;
-  color: #6CB1F0
+  color: black;
 }
 
 .link-container {
@@ -276,8 +276,8 @@ blockquote p {
 
 .post-text-container {
   margin-top: 20px;
-  font-weight: bold;
-  color: #6CB1F0;
+  
+  color: black;
   padding: 12px;
   text-align: center;
 }
