@@ -12,14 +12,9 @@ router.get('/', (req, res, next) => {
   .exec()
   .then( seedResults =>{
     res.locals.seed = seedResults;
-
   })
-  .catch( err => {
-    console.log( err );
-    console.log("SHIITT");
-  });
-
-  SeedModel
+  .then( () => {
+      SeedModel
   .find()
   .limit(25)
   .sort()
@@ -27,20 +22,18 @@ router.get('/', (req, res, next) => {
   .then( sortedSeedResults => {
     res.locals.seedSorted = sortedSeedResults;
   })
-  .catch( err => {
-    console.log( err );
-  });
-
-  PortafolioModel
-  .find()
-  .limit(10)
-  .exec()
-  .then( portafolioSeedResults => {
-    res.locals.portafolio = portafolioSeedResults;
-    res.render("index");
+  .then(() => {
+    PortafolioModel
+    .find()
+    .limit(10)
+    .exec()
+    .then( portafolioSeedResults => {
+      res.locals.portafolio = portafolioSeedResults;
+      res.render("index");
   })
   .catch( err => {
-  console.log( err );
+    next( err );
+  });
 });
 });
 
@@ -60,6 +53,7 @@ scheduleModel.save( err => {
   }
   res.redirect("/");
   });
+});
 });
 
 router.get("/myview", (req, res, next) => {

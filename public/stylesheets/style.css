@@ -240,11 +240,12 @@ blockquote p {
 .calendly-container {
   width: 50%;
   text-align: center;
-  margin: 20px 0 0 18px;
+  margin: 20px 0 0 15px;
 }
 
 .calendly {
   text-decoration: none;
+  font-size: 16px;
 }
 
 /* --- Post CONTAINERS ---*/
