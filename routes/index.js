@@ -12,26 +12,16 @@ router.get('/', (req, res, next) => {
   .exec()
   .then( seedResults =>{
     res.locals.seed = seedResults;
-
   })
-  .catch( err => {
-    console.log( err );
-    console.log("SHIITT");
-  });
-
-  SeedModel
+  .then()
   .find()
   .limit(25)
   .sort()
   .exec()
   .then( sortedSeedResults => {
     res.locals.seedSorted = sortedSeedResults;
-  })
-  .catch( err => {
-    console.log( err );
-  });
-
-  PortafolioModel
+})
+  .then()
   .find()
   .limit(10)
   .exec()
@@ -41,7 +31,7 @@ router.get('/', (req, res, next) => {
   })
   .catch( err => {
   console.log( err );
-});
+  });
 });
 
 router.post('/', (req, res, next) => {
