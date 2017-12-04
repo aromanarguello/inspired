@@ -72,21 +72,22 @@ a {
 }
 
 .title-text-container {
-  width: 600px;
+  width: 630px;
   height: 250px;
   margin: 10px 0 0 34px;
   display: inline-block;
-  line-height: 85px;
+  line-height: 89px;
 }
 
 .science-letter {
   color: #6CB1F0;
-  font-size: 100px;
+  font-size: 7vw;
   font-weight: bold;
 }
 
 .light-color-letters {
   color: rgba(196,224,237,0.8);
+  font-size: 9vw;
 }
 
 .data-list-container {
@@ -315,12 +316,12 @@ blockquote p {
 }
 
 .about-text p {
-  font-size: 22px;
+  font-size: 2vw;
 }
 
 .about-text h2 {
   color: #6CB1F0;
-  font-size: 48px;
+  font-size: 6vw;
 }
 
 .linkedin-link {
