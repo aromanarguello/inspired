@@ -322,3 +322,7 @@ blockquote p {
   color: #6CB1F0;
   font-size: 48px;
 }
+
+.linkedin-link {
+  text-decoration: none;
+}
