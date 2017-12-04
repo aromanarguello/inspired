@@ -3,7 +3,7 @@ const router          = express.Router();
 const SeedModel       = require('../models/inspired-model');
 const ScheduleModel   = require('../models/schedule-model');
 const PortafolioModel = require('../models/portafolio-model');
-
+const BookModel       = require('../models/book-model');
 /* GET home page. */
 router.get('/', (req, res, next) => {
   SeedModel
@@ -12,15 +12,26 @@ router.get('/', (req, res, next) => {
   .exec()
   .then( seedResults =>{
     res.locals.seed = seedResults;
+
   })
-  .then()
+  .catch( err => {
+    console.log( err );
+    console.log("SHIITT");
+  });
+
+  SeedModel
   .find()
   .limit(25)
   .sort()
   .exec()
   .then( sortedSeedResults => {
     res.locals.seedSorted = sortedSeedResults;
-    .then()
+  })
+  .catch( err => {
+    console.log( err );
+  });
+
+  PortafolioModel
   .find()
   .limit(10)
   .exec()
