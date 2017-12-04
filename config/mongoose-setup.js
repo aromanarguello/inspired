@@ -2,7 +2,7 @@ const mongoose = require( "mongoose" );
 
 mongoose.Promise = Promise;
 
-mongoose.connect( "mongodb://heroku_vrvkst0h:tvh2foc8p0imto5bt0i5cfpo7a@ds129796.mlab.com:29796/heroku_vrvkst0h", { useMongoClient: true } )
+mongoose.connect( process.env.MONGODB_URI, { useMongoClient: true } )
 .then( () => {
   console.log( 'Mongoose Connected!!!✨✨✨✨✨✨✨✨' );
 })
