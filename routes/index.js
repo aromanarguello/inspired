@@ -19,7 +19,7 @@ router.get('/', (req, res, next) => {
     console.log("SHIITT");
   });
 
-  SeedModelte
+  SeedModel
   .find()
   .limit(25)
   .sort()
