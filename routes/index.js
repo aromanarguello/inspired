@@ -14,7 +14,7 @@ router.get('/', (req, res, next) => {
     res.locals.seed = seedResults;
   })
   .then( () => {
-      SeedModel
+  SeedModel
   .find()
   .limit(25)
   .sort()

@@ -306,8 +306,8 @@ blockquote p {
 }
 
 .about-container {
-  color: rgb(196,224,237);
-  margin: 20px 0 0 35px;
+  color: rgba(196,224,237, 0.8);
+  margin: 40px 0 0 42px;
 }
 
 .about-text {
@@ -318,7 +318,7 @@ blockquote p {
   font-size: 22px;
 }
 
-.about-container h2 {
+.about-text h2 {
   color: #6CB1F0;
-  font-size: 28px;
+  font-size: 48px;
 }
