@@ -72,7 +72,7 @@ a {
 }
 
 .title-text-container {
-  width: 500px;
+  width: 600px;
   height: 250px;
   margin: 10px 0 0 34px;
   display: inline-block;
@@ -276,7 +276,7 @@ blockquote p {
 
 .post-text-container {
   margin-top: 20px;
-  
+
   color: black;
   padding: 12px;
   text-align: center;
@@ -287,8 +287,19 @@ blockquote p {
   margin-top: 20px;
 }
 
-
 .screenshot {
   width: 180px;
   height: 120px;
+}
+
+.social-container {
+  float: right;
+  line-height: 25px;
+}
+
+.social-container a {
+  text-decoration: none;
+  color: #6CB1F0;
+  padding-top: 50px;
+  font-size: 20px;
 }
