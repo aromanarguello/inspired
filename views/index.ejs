@@ -18,30 +18,21 @@
       </h2>
     </div>
   <hr class="top-hr" />
-    <div class="data-list-container data-list-left">
-      <% seed.forEach( oneSeed => { %>
-        <%if (oneSeed.company.length < 18) {%>
-        <ul>
-          <li>
-            <a href="/"><%=oneSeed.company%></a>
-          </li>
-        </ul>
-        <%}%>
-      <%});%>
+  <div class="about-container">
+    <div class="about-text">
+      <h2 class="aboutme">About me:</h2>
+      <p>
+        Currently, I am a student at Ironhack’s web development bootcamp based in Miami, FL.
+        My background is in Healthcare operations. I have a strong
+        passion for technology and web development. Not only has this passion driven my decision
+        to join Ironhack, but has also influenced me to pursue my main interest in further joining
+        the healthcare industry and technology together.
+        <br />
+        <br />
+        Specialties: JavaScript, Node.js, Angular 2, MongoDB, Express, HTML, CSS, Ruby.
+      </p>
     </div>
-    <div class="data-list-parent">
-    <div class="data-list-container data-list-right">
-      <% seedSorted.forEach( oneSeed => { %>
-        <%if (oneSeed.company.length > 20) {%>
-        <ul>
-          <li>
-            <a href="/"><%=oneSeed.company%></a>
-          </li>
-        </ul>
-      <%}%>
-      <%});%>
-    </div>
-    </div>
+  </div>
   </div> <!-- Right container -->
 
   <div class="left-container">

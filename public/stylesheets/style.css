@@ -303,3 +303,21 @@ blockquote p {
   padding-top: 50px;
   font-size: 20px;
 }
+
+.about-container {
+  color: rgb(196,224,237);
+  margin: 20px 0 0 35px;
+}
+
+.about-text {
+  width: 80%;
+}
+
+.about-text p {
+  font-size: 22px;
+}
+
+.about-container h2 {
+  color: #6CB1F0;
+  font-size: 28px;
+}
