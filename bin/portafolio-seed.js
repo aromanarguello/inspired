@@ -5,10 +5,8 @@ const PortafolioModel = require('../models/portafolio-model');
 const portafolioInfo = [
   {
     name: "Inspired",
-    description: `Inspired is a personal tool I created to help myself keep organized
-    with my schedule. It is my personalized virtual assistant/portafolio. People
-    are able to see my availbale times and schedule meetings through Inspired and even
-    add a message with the purpose of the meetign`,
+    description: `Inspired is my virtual personal assistant/portafolio. Inspired helps me keep
+    my schedule organized, and it allows me to show-case what I have created thus far`,
     img: "https://github.com/aromanarguello/inspired/blob/master/public/images/inspired.png?raw=true"
   },
   {

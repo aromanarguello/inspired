@@ -1,0 +1,111 @@
+
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .social-container {
+    margin-right: 130px;
+    margin-top: 20px;
+  }
+
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .social-container {
+    margin-right: 200px;
+    margin-top: 20px;
+  }
+
+  .blockquote-container {
+    width: 250px;
+    height: 100px;
+    margin: 0 100px 0 0px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #6CB1F0;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding: 50px 30px 0 20px;
+  }
+
+ .left-form-container {
+   width: 100%;
+    margin: 0;
+ }
+ .left-form-float {
+   margin: 10px auto;
+   width: 200px;
+ }
+
+ .blockquote-container {
+   margin: 0 auto;
+   padding: 0;
+   width: 100%;
+ }
+
+ blockquote {
+   margin: 30px auto 0 auto;
+ }
+
+ #messageInput {
+   width: 160px
+ }
+
+ blockquote p {
+   margin: 0 60px 0 0;
+ }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .science-letter {
+    font-size: 9vw;
+    line-height: 5px;
+    margin-right: 20px;
+    margin-top: 50px;
+  }
+
+  .bottom-hr {
+    margin: 0 auto;
+  }
+
+  .title-text-container {
+    height: 160px;
+    width: 350px;
+    margin-left: 20px;
+  }
+
+  .social-container {
+    margin: 0;
+    position: relative;
+    right: 230px;
+    bottom: 50px;
+  }
+
+  .nav-links {
+    visibility: hidden;
+  }
+
+  .about-text p {
+    font-size: 10vw;
+  }
+
+  .post-container {
+    width: 200px;
+    height: 480px;
+  }
+
+  .link-container {
+
+  }
+
+  .header-container {
+    padding: 10px;
+    font-size: 2vw;
+  }
+
+  .about-text p {
+    font-size: 9px;
+  }
+}
