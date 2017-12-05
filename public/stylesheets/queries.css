@@ -62,7 +62,7 @@
   .science-letter {
     font-size: 9vw;
     line-height: 5px;
-    margin-right: 20px;
+    margin-right: 23px;
     margin-top: 50px;
   }
 
@@ -79,7 +79,7 @@
   .social-container {
     margin: 0;
     position: relative;
-    right: 230px;
+    right: 250px;
     bottom: 50px;
   }
 
@@ -92,8 +92,9 @@
   }
 
   .post-container {
-    width: 200px;
-    height: 480px;
+    width: 150px;
+    height: 450px;
+    margin-bottom: 20px;
   }
 
   .link-container {
@@ -106,6 +107,33 @@
   }
 
   .about-text p {
-    font-size: 9px;
+    font-size: 15px;
   }
+
+  .screenshots {
+    width: 120px;
+  }
+
+  .left-container {
+    height: 200%;
+  }
+
+  .post-text-container {
+    font-size: 12px
+  }
+
+  #messageInput {
+    width: 130px
+  }
+
+  .left-form-float {
+    margin: 10px auto;
+    width: 150px;;
+  }
+
+  .blockquote-container {
+    font-size: 12px;
+    text-align: center;
+  }
+
 }
