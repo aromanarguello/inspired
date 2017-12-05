@@ -296,6 +296,7 @@ blockquote p {
 
 .social-container {
   float: right;
+  margin-right: 20px;
   line-height: 25px;
 }
 
