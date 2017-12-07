@@ -46,6 +46,14 @@ router.post('/', (req, res, next) => {
     dateAdded:  new Date()
   };
 
+  if(req.body.firstName &&
+     req.body.lastName &&
+     req.body.email &&
+     req.body.message === "") {
+     res.locals.errorMessage = "Please fill out the form.";
+        res.render("/");
+        return;
+   }
 const scheduleModel = new ScheduleModel( scheduleFormSubmission );
 scheduleModel.save( err => {
   if ( err ) {
