@@ -10,6 +10,7 @@ pete river (submit btn): #3498db;
 body {
   font: 14px "lato", Arial, Helvetica, Verdana, sans-serif;
   background-color: #0A2037;
+  z-index: 1;
 }
 
 a {
@@ -20,6 +21,7 @@ a {
   width: 100%;
   height: 1000px;
   overflow: auto;
+  z-index: 1;
 }
 
 .right-container,
@@ -27,10 +29,12 @@ a {
   margin: 0;
   width: 49.8%;
   height: 180%;
+  z-index: 1;
 }
 
 .right-container {
   float: left;
+  overflow: scroll;
 }
 
 .left-container {
