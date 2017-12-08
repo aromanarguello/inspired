@@ -63,50 +63,8 @@
       <li> <i class="ion-social-linkedin git-icon"></i> <a class="linkedin-link" href="https://www.linkedin.com/in/aromanarguello/"> Linkedin</a> </li>
       <li> <i class="ion-ios-email"></i> <a class="linkedin-link" href="mailto:aromanarguello@gmail.com">Contact</a> </li>
     </ul>
-    <%# <div id='form-parent'>
-      <div class="left-form-container">
-      <div class="left-form-float">
-        <form id="schedule-input" method="post" action="/">
-          <label class="label-text" for="firstNameInput">First Name:</label>
-          <br />
-          <input id="firstNameInput" type="text" name="firstName" placeholder="e.g. John">
-          <br />
-          <label class="label-text" for="lastNameInput">Last Name:</label>
-          <br />
-          <input id="lastNameInput" type="text" name="lastName" placeholder="e.g. Smith">
-          <br />
-          <label class="label-text" for="emailInput">Email:</label>
-          <br />
-          <input id="emailInput" type="email" name="email" placeholder="e.g. johnsmith@gmail.com">
-          <br />
-          <label class="label-text message-label" for="messageInput">Write your message:</label>
-          <br />
-          <textarea maxLength="140" id="messageInput" type="text" name="message" placeholder="Please write a short message here. Then schedule a time that works for you."></textarea>
-          <br />
-          <button class="submit-btn">Submit</button>
-
-
-        </form>
-      </div>
-    </div>
-        <div class="blockquote-container">
-          <blockquote>
-          <em>"Always deliver more than expected"</em>
-          <p><em>-Larry Page</em></p>
-        </div> <!-- left-form-container -->
-
-        </blockquote>%>
-        <!-- Calendly link widget begin -->
-          <%# <div class="calendly-container">
-            <!-- Calendly link widget begin -->
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-            <a href="" class="calendly" onclick="Calendly.showPopupWidget('https://calendly.com/aromanarguello');return false;">Schedule</a>
-            <!-- Calendly link widget end -->
-        </div>%>
-        <!-- Calendly badge widget end -->
-        <%# </div>%>
     <br />
+    <div class="post-wrapper">
     <% portafolio.forEach( fromPortafolio => { %>
       <div class="post-container">
         <div class="header-container">
@@ -125,6 +83,7 @@
           </div>
     </div>
     <%})%>
+    </div>
 </div> <!-- Left container -->
 
 

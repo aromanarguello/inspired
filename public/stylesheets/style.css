@@ -24,6 +24,10 @@ a {
 
 }
 
+.post-wrapper {
+  margin-top: 50px;
+}
+
 .right-container,
 .left-container {
   margin: 0;
