@@ -76,8 +76,8 @@
     left: 40%;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
-    -webkit-animation-duration: 22s;
-    animation-duration: 22s;
+    -webkit-animation-duration: 17s;
+    animation-duration: 17s;
 }
 
 }
@@ -87,8 +87,8 @@
     left: 33%;
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
-    -webkit-animation-duration: 22s;
-    animation-duration: 22s;
+    -webkit-animation-duration: 13s;
+    animation-duration: 13s;
 }
 
 }
@@ -98,8 +98,8 @@
     left: 33%;
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
-    -webkit-animation-duration: 22s;
-    animation-duration: 22s;
+    -webkit-animation-duration: 12s;
+    animation-duration: 12s;
 }
 
 }
@@ -131,8 +131,8 @@
     left: 38%;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
-    -webkit-animation-duration: 35s;
-    animation-duration: 35s;
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
 }
 
 }
@@ -143,17 +143,48 @@
     left: 12%;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
-    -webkit-animation-duration: 80s;
-    animation-duration: 80;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10;
 }
+
 .bubbles li:nth-child(12) {
     width: 15px;
     height: 15px;
     left: 80%;
     -webkit-animation-delay: 1.2s;
     animation-delay: 1.2s;
-    -webkit-animation-duration: 80s;
-    animation-duration: 80;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20;
+}
+
+.bubbles li:nth-child(13) {
+    width: 15px;
+    height: 15px;
+    left: 70%;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+
+.bubbles li:nth-child(14) {
+    width: 25px;
+    height: 25px;
+    left: 14%;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+    -webkit-animation-duration: 16s;
+    animation-duration: 16;
+}
+
+.bubbles li:nth-child(12) {
+    width: 8px;
+    height: 8px;
+    left: 300%;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 14s;
+    animation-duration: 14s;
 }
 
 @-webkit-keyframes square {
