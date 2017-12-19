@@ -10,7 +10,7 @@ const portafolioInfo = [
     fill out the survey, get your results and take a sneak peak at the combination
     of different recipes you can eat each day that combined are near your
     requirements.`,
-    img: ""
+    img: "https://github.com/aromanarguello/inspired/blob/master/public/images/calobit.png?raw=true"
   },
   {
     name: "Inspired",
