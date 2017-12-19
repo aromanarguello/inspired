@@ -4,19 +4,20 @@ const PortafolioModel = require('../models/portafolio-model');
 
 const portafolioInfo = [
   {
+    name: "Inspired",
+    description: `Inspired is my virtual personal assistant/portafolio. Inspired helps me keep
+    my schedule organized, and it allows me to show-case what I have created thus far`,
+    img: "https://github.com/aromanarguello/inspired/blob/master/public/images/inspired.png?raw=true"
+  },
+  {
     name: "Calobit",
+    url: "https://www.calobit.co",
     description: `Welcome to CaloBit. Say goodbye to boring diets and boring calorie counting.
     CaloBit allows you to calculate your daily caloric requirements. Simply
     fill out the survey, get your results and take a sneak peak at the combination
     of different recipes you can eat each day that combined are near your
     requirements.`,
     img: "https://github.com/aromanarguello/inspired/blob/master/public/images/calobit.png?raw=true"
-  },
-  {
-    name: "Inspired",
-    description: `Inspired is my virtual personal assistant/portafolio. Inspired helps me keep
-    my schedule organized, and it allows me to show-case what I have created thus far`,
-    img: "https://github.com/aromanarguello/inspired/blob/master/public/images/inspired.png?raw=true"
   },
   {
     name: "ChemGame",
