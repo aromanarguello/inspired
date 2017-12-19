@@ -31,7 +31,7 @@ router.get('/', (req, res, next) => {
       res.locals.portafolio = portafolioSeedResults;
       res.render("index");
   })
-  .catch( err => {
+     .catch( err => {
     next( err );
   });
 });
